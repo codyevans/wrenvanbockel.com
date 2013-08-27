@@ -1,26 +1,21 @@
 <?php get_header(); ?>
 
 
-
-<!-- start the loop -->
-
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 	<h3><?php the_title(); ?></h3>
-	<?php the_field('medium'); ?>
+	<p><?php the_field('medium'); ?></p>
 
-<?php endwhile; else: ?>
+	<img src="<?php the_field('main-image'); ?>">
 
-	<p>There are no posts or pages here.</p>
+	<?php previous_post_link(); ?>
+	
+	<a href="/artwork/">index</a>
+ 	
+ 	<?php next_post_link(); ?> 
 
-<?php endif; ?>
 
-<!-- /loop -->
-
-<br>
-
-<a href="/artwork/">index</a>
-
+<?php endwhile; endif; ?>
 
 
 <?php get_footer(); ?>

@@ -1,24 +1,40 @@
 <?php get_header(); ?>
 
 
-<h1>Hello World</h1>
-<p>This is the front-page.php file</p>
+<h1>Wren VanBockel</h1>
+<p>The creative portfolio of Wren VanBockel</p>
+
+ <nav id="filters">
+    <a href="#" data-filter="*">All</a> | 
+    <a href="#" data-filter="#painting">Painting</a> |
+     <a href="#" data-filter="#sculpture">Sculpture</a>
+</nav>
 
 
-<!-- start the loop -->
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<?php
+	
+	$args = array(
+		'post_type' => 'artwork' 
+	); 
 
-	<h3><?php the_title(); ?></h3>
+	$the_query = new WP_Query($args);
+
+ ?>
+
+<!-- start custom loop -->
 
 
+<div class="container">
 
+<?php if (have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
+	<div id="<?php the_field('id'); ?>" class="module item">
+	<?php get_template_part('content', 'artwork'); ?>
+	</div>
 
-<?php endwhile; else: ?>
+<?php endwhile; endif; ?>
 
-	<p>There are no posts or pages here.</p>
+</div> <!-- /container -->	
 
-<?php endif; ?>
-<!-- /loop -->
 
 
 <?php get_footer(); ?>

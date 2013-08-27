@@ -6,8 +6,76 @@ Author: Cody Evans
 Author URI: http://codyevansdesign.com
 Version: 1.0
 */
+/* line 22, style.scss */
+.module {
+  width: 300px;
+  border: 1px solid black;
+  margin: 20px;
+  padding: 10px;
+}
+/* line 31, style.scss */
+.module:hover img {
+  -webkit-filter: none;
+}
+/* line 36, style.scss */
+.module img {
+  width: 100%;
+  -webkit-filter: grayscale(1);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
 
+/**** Isotope Filtering ****/
+/* line 51, style.scss */
+.isotope-item {
+  z-index: 2;
+}
 
-body {
-	color: red;
+/* line 55, style.scss */
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+/* line 63, style.scss */
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+/* line 71, style.scss */
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+
+/* line 79, style.scss */
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+/* line 91, style.scss */
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
 }
