@@ -6,6 +6,7 @@
 
 get_header(); ?>
 
+<p>This is the artwork page</p>
 
 <?php
 	

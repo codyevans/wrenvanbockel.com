@@ -1,6 +1,12 @@
-<?php get_header(); ?>
+<?php 
 
-<p>this is a regular page</p>
+/*
+	Template Name: Connect Page
+*/
+
+get_header(); ?>
+
+<p>this is the connect page</p>
 
 <!-- start the loop -->
 
