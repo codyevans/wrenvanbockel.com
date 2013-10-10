@@ -43,9 +43,6 @@ get_header();
                                     <a class="gpu" id="paintings" href="#" data-filter=".painting">paintings</a>
                                 </li>
                                 <li>
-                                    <a class="gpu" id="drawings" href="#" data-filter=".drawing">drawings</a>
-                                </li>
-                                <li>
                                     <a class="gpu" id="wood-cuts" href="#" data-filter=".wood-cut">wood cuts</a>
                                 </li>
                                 <li>
