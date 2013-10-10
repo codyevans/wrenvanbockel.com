@@ -11,91 +11,28 @@ Version: 1.0
 // compass
 @import "compass/css3";
 
-// reset and variables
-@import "scss/normalize";
+// variables and reset
 @import "scss/bits";
+@import "scss/normalize";
+@import "scss/fonts";
 
-// typography
-@import "scss/typography";
+// animations
+@import "scss/preloader";
+@import "scss/isotope";
 
+// globals + grid
+@import "scss/globals";
+@import "scss/grid";
 
-.module {
-    width: 300px;
-    border: 1px solid black;
-    margin: 20px;
-    padding: 10px;
+// header
+@import "scss/header";
 
-    
+// sections
+@import "scss/modules";
 
-    &:hover {
-    	img {
-    		-webkit-filter: none;
-    	}
-    }
-
-    img	{
-    	width: 100%;
-    	-webkit-filter: grayscale(1);
-   		@include transition(all 0.3s);
-    } 
-}
-
-
-
-
-
-
-
-/**** Isotope Filtering ****/
-
-.isotope-item {
-  z-index: 2;
-}
-
-.isotope-hidden.isotope-item {
-  pointer-events: none;
-  z-index: 1;
-}
-
-/**** Isotope CSS3 transitions ****/
-
-.isotope,
-.isotope .isotope-item {
-  -webkit-transition-duration: 0.5s;
-     -moz-transition-duration: 0.5s;
-      -ms-transition-duration: 0.5s;
-       -o-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-}
-
-.isotope {
-  -webkit-transition-property: height, width;
-     -moz-transition-property: height, width;
-      -ms-transition-property: height, width;
-       -o-transition-property: height, width;
-          transition-property: height, width;
-}
-
-.isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-     -moz-transition-property:    -moz-transform, opacity;
-      -ms-transition-property:     -ms-transform, opacity;
-       -o-transition-property:      -o-transform, opacity;
-          transition-property:         transform, opacity;
-}
-
-/**** disabling Isotope CSS3 transitions ****/
-
-.isotope.no-transition,
-.isotope.no-transition .isotope-item,
-.isotope .isotope-item.no-transition {
-  -webkit-transition-duration: 0s;
-     -moz-transition-duration: 0s;
-      -ms-transition-duration: 0s;
-       -o-transition-duration: 0s;
-          transition-duration: 0s;
-}
-
-
-
+// pages
+@import "scss/intro-page";
+@import "scss/artwork-page";
+@import "scss/single-artwork-page";
+@import "scss/about-page";
 

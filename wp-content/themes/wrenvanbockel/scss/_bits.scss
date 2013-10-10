@@ -1,25 +1,36 @@
-// RED COLOR VARIABLES
-// #b71b1e - red color used on old site.
-// #a81b11 - red color picked from ps.
-// #C90000 - red color from chrome dev.
-
 
 // colors
-$red: #b71b1e;
-$white: #FFFFFF;
-$grey: #f4f4f4;
-$dark-grey: #8F8F8F;
+$default-gray: #e7e7e7;
+$blue: #2c3f52;
+$dark-blue: #21303e;
+$pink: #ed4e6e; 
 
 
-// breakpoints
-@mixin breakpoint($point) {
-  @if $point == lrg {
-    @media (max-width: 1600px) { @content; }
-  }
-  @else if $point == med {
-    @media (max-width: 959px) { @content; }
-  }
-  @else if $point == sml {
-    @media (max-width: 767px)  { @content; }
-  }
+// hardware accleration
+
+.gpu {
+   -webkit-transform: translate3d(0, 0, 0);
+   -moz-transform: translate3d(0, 0, 0);
+   -ms-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+
+   -webkit-backface-visibility: hidden;
+   -moz-backface-visibility: hidden;
+   -ms-backface-visibility: hidden;
+   backface-visibility: hidden;
+
+   -webkit-perspective: 1000;
+   -moz-perspective: 1000;
+   -ms-perspective: 1000;
+   perspective: 1000;
+
+   // -webkit-transform: translateZ(0);
+   // -moz-transform: translateZ(0);
+   // -ms-transform: translateZ(0);
+   // -o-transform: translateZ(0);
+   // transform: translateZ(0);
 }
+
+
+
+
