@@ -84,24 +84,6 @@ get_header();
             <div class="main-container">
 
                 <div class="gpu" id="artwork-container">
-                  
-
-                        <!-- <div class="module item painting">
-                            <a href="single-artwork.php">
-                                <img src="img/hummingbirds.jpg">
-                                <div class="caption-hover">
-                                    <h3>Humming Birds</h3>
-                                    <hr>
-                                    <p class="category">Painting</p>
-                                    <p class="year">2013</p>
-                                    <div class="view-work">
-                                        <span aria-hidden="true" data-icon="&#x53;"></span>
-                                        View Work
-                                    </div>
-                                </div>
-                            </a>
-                        </div> -->
-
 
                     <?php
 	
@@ -122,7 +104,6 @@ get_header();
                                     <h3><?php the_title(); ?></h3>
                                     <hr>
                                     <p class="category"><?php the_field('cat'); ?></p>
-                                    <p class="year"><?php the_field('date'); ?></p>
                                     <div class="view-work">
                                         <span aria-hidden="true" data-icon="&#x53;"></span>
                                         View Work

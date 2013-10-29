@@ -100,12 +100,6 @@ get_header();
 	                                        <strong>medium: </strong><?php the_field('medium'); ?>
 	                                    </p>
 	                                </li>
-
-	                                <li>
-	                                    <p>
-	                                        <strong>year: </strong><?php the_field('date'); ?>
-	                                    </p>
-	                                </li>
 	                                <li>
 	                                    <p>
 	                                        <strong>size: </strong><?php the_field('size'); ?>
