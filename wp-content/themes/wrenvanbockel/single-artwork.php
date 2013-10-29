@@ -53,10 +53,10 @@ get_header();
             </div>
 
              <div id="filtering-bar" class="filter-bar">
-                <div id="filter-btn" class="filter-btn">
+              <!--   <div id="filter-btn" class="filter-btn">
                     <p>Filter Artwork</p>
                     <span class="arrow"></span>
-                </div>
+                </div> -->
             </div>
 
             <div id="body-menu">
